@@ -38,12 +38,14 @@ namespace Conditional.Statement
                 else if ((grade >= 62) && (grade <= 67)) Console.WriteLine("Grade: D");
                 else if ((grade >= 60) && (grade <= 61)) Console.WriteLine("Grade: D-");
                 else if (grade < 60) Console.WriteLine("Grade: F");
+                Console.ReadKey(true);
 
             }
             catch
             {
                 Console.WriteLine("Please enter an integer value as your grade");
                 Console.WriteLine("Press any key to exit the program and try again..");
+                Console.ReadKey(true);
             }
         }
     }
